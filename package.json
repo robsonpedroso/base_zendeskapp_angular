@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "zdg:build": "ng build --base-href=\"./\" && cp -r dist/zendesk-ticket-app/browser/* zendesk/assets/angular",
+    "zdg:serve": "npm run zdg:build && cd zendesk && npx @zendesk/zcli apps:server"
   },
   "prettier": {
     "printWidth": 100,

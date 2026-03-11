@@ -1,4 +1,9 @@
+
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+/zendesk/tmp/*
+/zendesk/tmp/angular/*
+/zendesk/tmp/angular/**/*
 
 # Compiled output
 /dist
